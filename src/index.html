@@ -1,23 +1,380 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-      <h1 class="uoc-title">Hello, UOC!<i class="fas fa-university"></i></h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <link id="favicon" rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <title>Anaís Fernández | Diseño & desarrollo web</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav>
+      <a href="#index">
+        <div>
+          <img src="./assets/images/logo.svg" alt="AFV logo" class="logo" loading="lazy">
+        </div>
+      </a>
+      <ul>
+        <li><a href="#index">Inicio</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#about-me">Sobre mí</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button class="menu-ham" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- index -->
+    <article class="index" id="index">
+      <section class="description">
+        <h1>Encantada de conocerte,<br />soy Anaís Fernández<br />y me dedico al<br />
+          <spam class="tittlebold">diseño gráfico &<br />desarrollo web front-end</spam>
+        </h1>
+      </section>
+      <section class="slider">
+        <figure>
+          <picture>
+            <source media="(max-width:576px)" srcset="./assets/images/1.gig-mobile.jpg" loading="lazy">
+            <img src="./assets/images/1.gig.jpg" alt="GIG" loading="lazy">
+          </picture>
+          <picture>
+            <source media="(max-width:576px)" srcset="./assets/images/2.feelfactory-mobile.jpg" loading="lazy">
+            <img src="./assets/images/2.feelfactory.jpg" alt="Feel Factory" loading="lazy">
+          </picture>
+          <picture>
+            <source media="(max-width:576px)" srcset="./assets/images/3.domsum-mobile.jpg" loading="lazy">
+            <img src="./assets/images/3.domsum.jpg" alt="Dom Sum" loading="lazy">
+          </picture>
+          <picture>
+            <source media="(max-width:576px)" srcset="./assets/images/4.radicaleslibres-mobile.jpg" loading="lazy">
+            <img src="./assets/images/4.radicaleslibres.jpg" alt="Radicales Libres" loading="lazy">
+          </picture>
+          <picture>
+            <source media="(max-width:576px)" srcset="./assets/images/5.maow-mobile.jpg" loading="lazy">
+            <img src="./assets/images/5.maow.jpg" alt="Maow" loading="lazy">
+          </picture>
+          <picture>
+            <source media="(max-width:576px)" srcset="./assets/images/6.processing-mobile.gif" loading="lazy">
+            <img src="./assets/images/6.processing.gif" alt="Generative art" loading="lazy">
+          </picture>
+        </figure>
+      </section>
+    </article>
+
+    <!-- projects -->
+    <article class="projects" id="projects">
+      <div class="container">
+        <div class="row">
+          <section class="card">
+            <div class="card-header">
+              <img src="./assets/images/2.feelfactory.jpg" alt="Feel Factory" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h1>FEEL FACTORY</h1>
+              <h3>Identidad corporativa - 2020</h3>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card-header">
+              <img src="./assets/images/1.gig.jpg" alt="GIG" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h1>GIG</h1>
+              <h3>Diseño de app móvil – 2020</h3>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card-header">
+              <img src="./assets/images/3.domsum.jpg" alt="Dom Sum" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h1>DOM SUM</h1>
+              <h3>Diseño y desarrollo web – 2021</h3>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card-header">
+              <img src="./assets/images/5.maow.jpg" alt="Maow" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h1>MAOW</h1>
+              <h3>Diseño de app móvil – 2020</h3>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card-header">
+              <img src="./assets/images/4.radicaleslibres.jpg" alt="Radicales Libres" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h1>RADICALES LIBRES</h1>
+              <h3>Identidad corporativa – 2020</h3>
+            </div>
+          </section>
+          <section class="card">
+            <div class="card-header">
+              <img src="./assets/images/6.processing.gif" alt="Generative art" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h1>PROCESSING ART</h1>
+              <h3>Arte generativo – 2021</h3>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <!-- about me -->
+    <article class="about-me" id="about-me">
+      <div>
+        <section class="photocv">
+          <picture>
+            <source media="(max-width:768px)" srcset="./assets/images/anais-fernandez-mobile.jpg" loading="lazy">
+            <img src="./assets/images/anais-fernandez.jpg" alt="AFV photography" loading="lazy">
+          </picture>
+        </section>
+        <section class="curriculumvitae">
+          <div class="introduction">
+            <p>Encantada de conocerte, soy <spam class="bold">Anaís Fernández Villar</spam>, nací en <spam class="bold">
+                1996</spam> y vivo en<spam class="bold"> Galicia</spam>. Desde
+              siempre me han interesado las artes plásticas y el diseño, por lo que decidí hacerlo oficial estudiando el
+              Grado de Diseño Gráfico en A Coruña, Galicia.</p>
+            <p>En la actualidad, he comenzado a estudiar a distancia el Máster de desarrollo de sitios y aplicaciones
+              web, siendo ésta la especialidad por la que sentí mayor interés a lo largo de mis estudios de diseño.</p>
+          </div>
+          <h1>Educación</h1>
+          <div class="flexbox-container">
+            <div>
+              <p>2020 - 2022</p>
+            </div>
+            <ul>
+              <li>Máster en Desarrollo de Sitios y Aplicaciones Web</li>
+              <li>Universitat Oberta de Catalunya</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>2016 - 2020</p>
+            </div>
+            <ul>
+              <li>Grado en Diseño Gráfico</li>
+              <li>EASD Pablo Picasso (A Coruña)</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>2014 - 2016</p>
+            </div>
+            <ul>
+              <li>Bachillerato de Artes Plásticas, Imagen y Diseño</li>
+              <li>IES Politécnico de Vigo (Pontevedra)</li>
+            </ul>
+          </div>
+          <h1>Experiencia</h1>
+          <div class="flexbox-container">
+            <div>
+              <p>sep 2021 - <spam class="date">dic 2021</spam>
+              </p>
+            </div>
+            <ul>
+              <li>Diseñadora web, desarrolladora web y diseñadora UI/UX</li>
+              <li>Xeito (Nigrán, Pontevedra)</li>
+              <li>Práticas en empresas</li>
+              <li>Media jornada</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>may 2021 - <spam class="date">actualidad</spam>
+              </p>
+            </div>
+            <ul>
+              <li>Profesora de diseño gráfico y desarrollo web front-end</li>
+              <li>Superprof</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>feb 2020 - <spam class="date">may 2020</spam>
+              </p>
+            </div>
+            <ul>
+              <li>Diseñadora gráfica, web y desarrolladora web front-end</li>
+              <li>Ayco Internet, S.L. (Vigo, Pontevedra)</li>
+              <li>Práticas en empresas</li>
+              <li>Jornada completa</li>
+            </ul>
+          </div>
+          <h1>Campos y Software</h1>
+          <div class="flexbox-container">
+            <div>
+              <p>Diseño gráfico<br></p>
+            </div>
+            <ul>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Indesign</li>
+              <li>Adobe Premiere Pro</li>
+              <li>Adobe After Effects</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>Diseño web<br></p>
+            </div>
+            <ul>
+              <li>Figma</li>
+              <li>Sketch</li>
+              <li>Adobe XD</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>Desarrollo web<br></p>
+            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Processing</li>
+              <li>Wordpress</li>
+              <li>Webflow</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>Otros<br></p>
+            </div>
+            <ul>
+              <li>Motion graphics</li>
+              <li>Fotografía y vídeo</li>
+              <li>Ilustración digital</li>
+            </ul>
+          </div>
+          <h1>Idiomas</h1>
+          <div class="flexbox-container">
+            <div>
+              <p>Español</p>
+            </div>
+            <ul>
+              <li>Nativo</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>Gallego<br></p>
+            </div>
+            <ul>
+              <li>Nativo (Nivel CELGA 4)</li>
+            </ul>
+          </div>
+          <div class="flexbox-container">
+            <div>
+              <p>Inglés<br></p>
+            </div>
+            <ul>
+              <li>Nivel intermedio hablado y escrito (B2)</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- contact -->
+    <article class="contact" id="contact">
+
+      <div class="container-form">
+
+        <section class="photo-form">
+          <div>
+            <h1>Si tienes alguna pregunta o idea, no dudes en contactar conmigo.</h1>
+            <a href="tel:625946934" class="btn-first">625946934</a>
+            <a href="mailto:anaisfv.dsn@gmail.com" class="mail">anaisfv.dsn@gmail.com</a>
+          </div>
+        </section>
+
+        <section class="form-fields container">
+          <form id="form" class="form">
+            <div class="form-control">
+              <input type="text" id="username" placeholder="Nombre" />
+              <small>Error message</small>
+            </div>
+            <div class="form-control">
+              <input type="text" id="email" placeholder="Email" />
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <input type="text" id="matter" placeholder="Asunto" />
+              <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+              <textarea type="text" id="message" placeholder="Escribe un mensaje"></textarea>
+              <small>Error message</small>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </section>
+      </div>
+    </article>
+
+    <!-- social media -->
+    <article class="socialmedia">
+      <div>
+        <section class="emoji">
+          <img src="./assets/images/socialemoji.gif" alt="AFV memoji" loading="lazy">
+        </section>
+        <section class="social-link">
+          <a href="https://www.linkedin.com/in/ana%C3%ADs-fern%C3%A1ndez-774872158/" aria-label="My Linkedin account">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.behance.net/anaisfernandezvillar" aria-label="My Behance account">
+            <i class="fab fa-behance"></i>
+          </a>
+          <a href="https://open.spotify.com/user/sianko_" aria-label="My Spotify account">
+            <i class="fab fa-spotify"></i>
+          </a>
+          <a href="https://www.instagram.com" aria-label="My Instagram account">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.superprof.es/clases-diseno-grafico-diseno-web-desarrollo-front-end-html-css-javascript.html"
+            aria-label="My Superprof account">
+            <img src="./assets/images/superprof.svg" alt="My Superprof account">
+          </a>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-form">
+      <div class="footer-right">
+        <p>© 2021 Anaís Fernández Villar</p>
+      </div>
+      <div class="footer-left">
+        <ul>
+          <li><a href="#index">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#about-me">Sobre mí</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
     </div>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </footer>
+
+  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
